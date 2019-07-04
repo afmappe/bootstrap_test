@@ -1,0 +1,28 @@
+<p>
+  generic-list works!
+</p>
+
+
+
+<div appSearch [search]="search">Seach</div>
+<p>{{search.orderField}}</p>
+<p>{{search.pageIndex}}</p>
+<p>{{search.pageSize}}</p>
+
+<button (click)="onclick()">Click Me!</button>
+
+<table class="table table-striped">
+
+  <thead>
+    <tr>
+      <th scope="col" *ngFor="let item of header">{{item.text}}</th>
+    </tr>
+  </thead>
+  <tr *ngFor="let item of header">
+    <th scope="row">{{item.text}}</th>
+    <td> Name </td>
+    <td> Aran </td>
+    <td> Population </td>
+  </tr>
+
+</table>
